@@ -28,18 +28,18 @@ function Footer() {
 
       <div className=" justify-between  items-center m-16">
         <div>
-          <ul className=" flex justify-start gap-16  items-center">
+        <ul className=" flex justify-start gap-16  items-center">
             <li>
-              <a href=""></a>Home
+              <a href="home">Home</a>
             </li>
             <li>
-              <a href=""></a>Category
+              <a href="home">Category</a>
             </li>
             <li>
-              <a href=""></a>About
+              <a href="home">About</a>
             </li>
             <li>
-              <a href=""></a>Contact
+              <a href="home">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,12 +55,12 @@ function Footer() {
           <img src={logo} alt="" />
         </div>
         <div>
-          <ul className=" flex  gap-16  ">
+         <ul className=" flex  gap-16  ">
             <li>
-              <a href=""></a>Terms of Service
+              <a href="home">Terms of Service</a>
             </li>
             <li>
-              <a href=""></a>Privacy Policy
+              <a href="home">Privacy Policy</a>
             </li>
           </ul>
         </div>
