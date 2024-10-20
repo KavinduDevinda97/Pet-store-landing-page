@@ -9,6 +9,7 @@ import sponser_six from "./assests/sponser 6.png";
 import sponser_seven from "./assests/sponser 7.png";
 import play_icon from "./assests/Play_icon.png";
 import heroicon from "./assests/heroicon.png";
+import foot_icon from "./assests/dog_foot.png";
 
 function Sellers() {
   return (
@@ -51,31 +52,43 @@ function Sellers() {
         </div>
       </div>
       <div>
-        <section className=" bg-custom-gradient  h-[695px]   p-6 md:p-10 flex flex-col md:flex-row items-center justify-between">
-          <div className="flex-1 ">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#002a48]">
-              One More Friend <br /> Thousands More Fun!
+        <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto">
+          {/* Left Column */}
+          <div className="md:w-1/2 mb-8 md:mb-0  ">
+            <h1 className="flex items-center  text-4xl md:text-6xl font-gilroy font-extrabold  text-[#002a48] mb-4">
+              Adoption
+              <span>
+                <img src={foot_icon} alt="dog foot" />
+              </span>
             </h1>
-            <p className="mt-4 text-lg text-gray-600">
-              Having a pet means you have more joy, a new friend, a happy person
-              who will always be with you. We have 200+ different pets that can
-              meet your needs!
+            <h2 className="text-2xl md:text-4xl font-bold  font-gilroy text-[#002a48] mb-6">
+              We Need Help.So Do They.
+            </h2>
+            <p
+              className="text-lg background: #242B33;
+ mb-4"
+            >
+              Adopt a pet and give it a home, <br></br> it will be love you back
+              unconditionally.
             </p>
-            <div className="flex justify-normal items-center ">
-              <button className=" rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
-                View Intro
-                <img src={play_icon} alt="" />
+
+            <div className="flex space-x-4">
+              <button className="flex items-center   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
+                View more
+                <img className="ml-2" src={play_icon} alt="" />
               </button>
               <button class="rounded-[57px] gap-12  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
-                Explore more
+                Explore Now
               </button>
             </div>
           </div>
-          <div className="flex-1 mt-6 md:mt-0">
+
+          {/* Right Column */}
+          <div className="md:w-1/2">
             <img
               src={heroicon}
-              alt="Happy dog and person"
-              className="w-full h-auto rounded-xl"
+              alt="hand with person hand"
+              className="rounded-lg "
             />
           </div>
         </section>

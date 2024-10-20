@@ -1,38 +1,43 @@
 import React from "react";
 import poster from "./assests/poster.png";
-import play_icon from "./assests/Play_icon.png";
+import play_Icon from "./assests/Play_icon.png";
 
-const Banner = () => {
+const Poster = () => {
   return (
-    <section className=" bg-custom-gradient  p-6 md:p-10 flex flex-col md:flex-row items-center justify-between">
-      <div className="flex-1 ">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#002a48]">
-          One More Friend <br /> Thousands More Fun!
+    <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto">
+      {/* Left Column */}
+      <div className="md:w-1/2 mb-8 md:mb-0  ">
+        <h1 className="text-4xl md:text-6xl font-gilroy font-extrabold  text-[#002a48] mb-4">
+          One More Friend
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <h2 className="text-2xl md:text-4xl font-bold  font-gilroy text-[#002a48] mb-6">
+          Thousands More Fun!
+        </h2>
+        <p
+          className="text-lg background: #242B33;
+ mb-4"
+        >
           Having a pet means you have more joy, a new friend, a happy person who
-          will always be with you. We have 200+ different pets that can meet
-          your needs!
+          will always be with you to have fun.
         </p>
-        <div className="flex justify-normal items-center ">
-          <button className=" rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
-            View Intro
-            <img src={play_icon} alt="" />
+
+        <div className="flex space-x-4">
+          <button className="flex items-center   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
+            View more
+            <img className="ml-2" src={play_Icon} alt="" />
           </button>
           <button class="rounded-[57px] gap-12  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
-            Explore more
+            Explore Now
           </button>
         </div>
       </div>
-      <div className="flex-1 mt-6 md:mt-0">
-        <img
-          src={poster}
-          alt="Happy dog and person"
-          className="w-full h-auto rounded-xl"
-        />
+
+      {/* Right Column */}
+      <div className="md:w-1/2">
+        <img src={poster} alt="dog & person" className="rounded-lg " />
       </div>
     </section>
   );
 };
 
-export default Banner;
+export default Poster;
