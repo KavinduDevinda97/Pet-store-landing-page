@@ -4,7 +4,7 @@ import play_Icon from "./assests/Play_icon.png";
 
 const Poster = () => {
   return (
-    <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto">
+    <section className="flex flex-col md:flex-row-reverse m-auto md:h-[378px] mx-6 my-4 rounded-xl md:flex-row justify-between items-center px-8 py-4 bg-custom-gradient h-1/3 ">
       {/* Left Column */}
       <div className="md:w-1/2 mb-8 md:mb-0  ">
         <h1 className="text-4xl md:text-6xl font-gilroy font-extrabold  text-[#002a48] mb-4">
@@ -21,9 +21,9 @@ const Poster = () => {
           will always be with you to have fun.
         </p>
 
-        <div className="flex space-x-4">
-          <button className="flex items-center   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
-            View more
+        <div className="flex space-x-4 ">
+          <button className="flex items-center whitespace-nowrap  rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
+            View Intro
             <img className="ml-2" src={play_Icon} alt="" />
           </button>
           <button class="rounded-[57px] gap-12  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
@@ -33,8 +33,12 @@ const Poster = () => {
       </div>
 
       {/* Right Column */}
-      <div className="md:w-1/2">
-        <img src={poster} alt="dog & person" className="rounded-lg " />
+      <div className="md:w-1/2 ">
+        <img
+          src={poster}
+          alt="dog & person"
+          className="rounded-lg md:flex-row-reverse "
+        />
       </div>
     </section>
   );

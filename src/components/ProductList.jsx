@@ -13,14 +13,14 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div className=" p-2 m-auto">
-      <div className="flex justify-between">
+    <div className=" p-2 m-auto mt-6 mx-6 ">
+      <div className="flex justify-between mb-6">
         <div className="flex flex-col">
           <h2>Whats new?</h2>
           <h1>Take A Look At Some Of Our Pets</h1>
         </div>
         <div>
-          <button className="flex items-center  rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
+          <button className="flex rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
             View more
             <img src={arrow} alt="" />
           </button>

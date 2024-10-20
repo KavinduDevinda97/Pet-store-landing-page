@@ -13,7 +13,7 @@ const PetList = () => {
   }, []);
 
   return (
-    <div className=" p-2 m-auto">
+    <div className=" p-2 m-auto mt-6 mx-6">
       <div className="flex justify-between">
         <div className="flex flex-col">
           <h2>Whats new?</h2>

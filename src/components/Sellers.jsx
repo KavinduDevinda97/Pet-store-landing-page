@@ -14,10 +14,10 @@ import foot_icon from "./assests/dog_foot.png";
 function Sellers() {
   return (
     <div>
-      <div className="flex flex-col m-auto ">
-        <div className="flex justify-between">
+      <div className="flex flex-col m-auto mt-6 mx-6 ">
+        <div className="flex md:justify-between ">
           <h2 className="font-gilroy">
-            Proud to be part of{" "}
+            Proud to be part of {""}
             <span className="text-[#003459] font-bold">Pet Sellers</span>
           </h2>
           <button className="flex items-center  rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
@@ -26,7 +26,7 @@ function Sellers() {
           </button>
         </div>
         <div>
-          <ul className=" flex items-center  gap-5">
+          <ul className="  justify-between m-auto flex items-center  gap-5">
             <li>
               <img src={sponser_one} alt="" />
             </li>
@@ -52,7 +52,7 @@ function Sellers() {
         </div>
       </div>
       <div>
-        <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto">
+        <section className="flex flex-col m-auto mx-6 my-4 md:h-[378px] rounded-xl md:flex-row justify-between items-center px-8 py-4 bg-custom-gradient  mx-auto">
           {/* Left Column */}
           <div className="md:w-1/2 mb-8 md:mb-0  ">
             <h1 className="flex items-center  text-4xl md:text-6xl font-gilroy font-extrabold  text-[#002a48] mb-4">
@@ -72,13 +72,13 @@ function Sellers() {
               unconditionally.
             </p>
 
-            <div className="flex space-x-4">
-              <button className="flex items-center   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
-                View more
-                <img className="ml-2" src={play_icon} alt="" />
-              </button>
-              <button class="rounded-[57px] gap-12  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
+            <div className="flex space-x-4 ">
+              <button class="rounded-[57px]  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
                 Explore Now
+              </button>
+              <button className="flex items-center whitespace-nowrap   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
+                View Intro
+                <img className="ml-2" src={play_icon} alt="" />
               </button>
             </div>
           </div>

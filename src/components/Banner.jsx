@@ -23,7 +23,7 @@ export default function Banner() {
 
         <div className="flex space-x-4">
           <button className="flex items-center   rounded-[57px] border-2 border-[#003459] px-8 py-3 text-[#003459] text-sm  ">
-            View more
+            View Intro
             <img className="ml-2" src={play_Icon} alt="" />
           </button>
           <button class="rounded-[57px] gap-12  px-8 py-3 text-white font-bold text-sm whitespace-nowrap bg-[#003459]">
