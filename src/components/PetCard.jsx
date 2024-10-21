@@ -11,7 +11,7 @@ const PetCard = ({ name, breed, gender, age, price, image }) => {
           </h3>
 
           <h3 className="text-3 font-700 text-[#667479] ">
-            Gene: <strong>{gender}</strong> . Age: <strong>{age}</strong>
+            Gene: <strong>{gender}</strong> &bull; Age: <strong>{age}</strong>
           </h3>
 
           <p className="text-sm font-medium">

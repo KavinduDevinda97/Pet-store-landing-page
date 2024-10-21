@@ -16,30 +16,24 @@ const ProductCard = ({
         <img src={image} alt={name} className="rounded-[10px]" />
         <div className="mt-3 ">
           <h3 className="text-4 font-700 font-bold">{name}</h3>
-          <h1>
-            <div className=" items-center space-y-1 ">
-              <ul>
-                <li>
-                  Product: <strong>{product}</strong>
-                </li>
-                <li className="list-disc">
-                  Size: <strong>{size}</strong>
-                </li>
-              </ul>
-            </div>
-          </h1>
+
+          <h3 className="text-3 font-700 text-[#667479] ">
+            Product: <strong>{product}</strong> &bull; Size:{" "}
+            <strong>{size}</strong>
+          </h3>
 
           <p className="text-sm font-medium">
             <strong>{price.toLocaleString()}</strong>
           </p>
-          <button>
-            <img src={gift} alt="" />
-            <ul>
-              <li className="list-disc">
+          <div className="bg-[#FCEED5] rounded-lg p-2">
+            <button className="flex flex-row gap-3  ">
+              <img src={gift} alt="" />
+              &bull;
+              <ul>
                 <h3 className="text-4 font-700 font-bold">{description}</h3>
-              </li>
-            </ul>
-          </button>
+              </ul>
+            </button>
+          </div>
         </div>
       </div>
     </div>
