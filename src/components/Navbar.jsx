@@ -10,23 +10,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-custom-gradient text-[#003459] font-bold font-gilroy relative">
+    <nav className="bg-custom-gradient  text-[#003459] font-bold font-gilroy relative">
       {/* Navbar container */}
-      <div className="flex justify-between items-center px-4 py-4">
+      <div className="flex justify-between items-center px-4 py-4 gap-12">
         {/* Hamburger Icon (Mobile Only) - Positioned to the left */}
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu}>
-            {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+            {isMenuOpen ? <FiX size={32} /> : <FiMenu size={32} />}
           </button>
         </div>
 
         {/* Logo in the center */}
-        <div className="flex-grow text-center">
+        <div className="flex-grow text-center ">
           <img src={logo} alt="Logo" className="h-10 mx-auto" />
         </div>
 
-        {/* Placeholder for alignment (empty div to keep the layout balanced) */}
-        <div className="md:hidden w-8"></div>
+        <div className="md:hidden w-8 "></div>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex md:items-center space-x-6">
@@ -63,7 +62,13 @@ const Navbar = () => {
       {/* Mobile Menu Links */}
       {isMenuOpen && (
         <div className="absolute top-0 left-0 w-full bg-custom-gradient text-center z-50">
-          <div className="flex flex-col items-center space-y-4 py-8">
+          <div className="flex flex-col justify-between items-center space-y-4 py-8">
+            <button onClick={toggleMenu}>
+              <FiX
+                size={28}
+                className="text-white  bg-[#003459]  rounded-xl p-1"
+              />
+            </button>
             <a href="/" className="hover:text-indigo-700">
               Home
             </a>
