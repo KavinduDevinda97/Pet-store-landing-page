@@ -1,10 +1,11 @@
 import React from "react";
 import HeroIcon from "./assests/Hero Banner.png";
 import play_Icon from "./assests/Play_icon.png";
+import rectangle from "./assests/Rectangle 2.png";
 
 export default function Banner() {
   return (
-    <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto">
+    <section className="flex flex-col m-auto md:flex-row justify-between items-center px-8 py-16 bg-custom-gradient  mx-auto pb-0">
       {/* Left Column */}
       <div className="md:w-1/2 mb-8 md:mb-0  ">
         <h1 className="text-4xl md:text-6xl font-gilroy font-extrabold  text-[#002a48] mb-4">
@@ -33,11 +34,19 @@ export default function Banner() {
       </div>
 
       {/* Right Column */}
-      <div className="md:w-1/2">
+      <div className="relative w-full h-full">
+        {/* Background Image */}
         <img
           src={HeroIcon}
-          alt="Person holding a pet"
-          className="rounded-lg "
+          alt="Background"
+          className=" absolute top-0 left-0 w-full h-full"
+        />
+
+        {/* Overlay Image */}
+        <img
+          src={rectangle}
+          alt="Overlay"
+          className="w-full h-full object-cover" // Adjust positioning & size as needed
         />
       </div>
     </section>
